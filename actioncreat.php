@@ -12,21 +12,15 @@
 
 	$tambah = mysqli_query($conn,"INSERT INTO blog VALUES(null,'$nama','$ketbayar','$catatan', null)");
 
-		if ($tambah>0) {
-			echo "data berhasil ditambahkan ✅";
-			echo "<br>";
-			echo "klik 👉 ";
-			echo "<a href='admin.php'>disini</a>";
-			echo " untuk melihat hasil";
-		}
-		else {
-			echo "data gagal ditambahkan";
-			echo "<br>";
-			echo "klik ";
-			echo "<a href='creat.php'>disini</a>";
-		echo " bray";
+	if($tambah>0){
+    echo "<script>alert('Data Berhasil Ditambah');document.location.href='admin.php'</script>";
+       
+}else{
+    echo "<script>alert('Data Gagal Ditambah');document.location.href='creat.php'</script>";
+       
+}
 
-		}
+		
 	
 
  ?>

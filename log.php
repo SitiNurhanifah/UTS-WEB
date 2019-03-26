@@ -7,23 +7,34 @@ require 'koneksi.php';
 <html>
 <head>
   <title>CRUD</title>
-   <link rel="stylesheet" type="text/css" href="style1.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 </head>
 <body>
 
 <center>
   <br>
-    <h2>Data Pembayaran Uang Kas</h2>
-  <br><br>
-   <table class="table-striped"  cellpadding="10" cellspacing="0" width="50%">
-  <tr>
+    <div class="row">
+        <div class="container-fuild">
+            <div class="row">
+                <br>
+                <br>
+                <div class="col-md-8 col-md-offset-2">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="title"><b>Data Siswa</b></span>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-stripped" width="100%">
+                                <thead>
+                                    <tr>
    
-    <th>no</th>
-    <th>Nama Mahasiswa 👩‍🎓👨‍🎓</th>
+     <th>No</th>
+    <th>Nama Mahasiswa 👩‍🎓</th>
     <th>keterangan  💸</th>
     <th>Catatan  📑</th>
-    <th>terkhir di update ⏱</th>
-    
+    <th>Terakhir di update ⏱</th>
   </tr> 
 
 <?php $i=1; ?>
@@ -41,7 +52,8 @@ require 'koneksi.php';
 </table>
 <br>
 <br>
-<a href="logout.php">Logout ▶</a>
+<div class="col-md-8 col-md-offset-2">
+                    <a href="logout.php" class="btn btn-primary"> LOGOUT   <i class=" glyphicon glyphicon-log-out "></i></a><br></br>
 </br>
 </br>
 </center>

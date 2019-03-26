@@ -22,13 +22,17 @@ if($_SESSION['level']!="admin"){
   $level=$_SESSION['level'];
 }
 ?>
-
+<head>
+  <title>index</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+  </head>
 <body style="background color:blue">
   
-  <title>index</title>
+  
 <div align='center'>
   <font color=black>
-  <h2 style="text-align: center; font-family: sans-serif; color: white;"><font color= black>Selamat Datang</font> <?php echo $level;?> <b><?php echo $username;?></b> <br>jika sudah selesai silahkan anda </br> <a href="logout.php"><b><font color=black>Logout</font></b></a>
+  <h2 style="text-align: center; font-family: sans-serif; color: white;"><font color= black>Selamat Datang</font> <?php echo $level;?> <b><?php echo $username;?></b> 
   </font>
 </div></h2> 
 <!-- <?php
@@ -66,24 +70,27 @@ if($_SESSION['level']!="admin"){
 // $row=mysqli_fetch_row($result);
 // echo "$row[0] $row[1] $row[2] $row[3]";
 ?> -->
-
-
-
-
-
-
-<center>
-<br><br>
-    <h2>Data Pembayaran Uang Kas</h2>
-  <br><br>
-    <table border="1" cellpadding="10" cellspacing="0" width="50%" >
-  <tr>
+    <div class="row">
+        <div class="container-fuild">
+            <div class="row">
+                <br>
+                <br>
+                <div class="col-md-8 col-md-offset-2">
+                    <a href="creat.php" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> Tambah</a><br></br>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="title"><b>Data Siswa</b></span>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-stripped" width="100%">
+                                <thead>
+                                    <tr>
    
-     <th>no</th>
-    <th>Nama Mahasiswa 👩‍🎓👨‍🎓</th>
+     <th>No</th>
+    <th>Nama Mahasiswa 👩‍🎓</th>
     <th>keterangan  💸</th>
     <th>Catatan  📑</th>
-    <th>terkhir di update ⏱</th>
+    <th>Terakhir di update ⏱</th>
     <th>opsi</th>
   </tr> 
 
@@ -96,7 +103,9 @@ if($_SESSION['level']!="admin"){
     <td><?= $x["catatan"];  ?></td>
     <td><?= $x["waktu"];  ?></td>
     <td>
-      <center><button><a href="ubah.php?id=<?= $x["id"]?>">ubah</a></button> || <button><a href="hapus.php?id=<?= $x["id"]?>" onclick =" return confirm ('apakah anda yakin?');">hapus</a></button></center>
+       <a href="ubah.php?id=<?= $x["id"]?>"  class="btn btn-info btn-xs"><i class="glyphicon glyphicon-pencil"></i> Edit</a> <br></br>
+      <a href="hapus.php?id=<?= $x["id"]?>"onclick="return confirm('Yakin mau di hapus?');"" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash"></i> Hapus</a>
+
     </td>
   </tr>
 <?php $i++; ?>
@@ -106,8 +115,9 @@ if($_SESSION['level']!="admin"){
 <br>
 <center>
   <br>
-<a href="creat.php">Tambah ✅</a><br><br>
-<a href="logout.php">Logout ❌ </a></br></br>
+<div class="col-md-8 col-md-offset-2">
+                    <a href="logout.php" class="btn btn-primary"><i class=" glyphicon glyphicon-log-out "></i> Logout</a><br></br>
+                    
 </center>
   </body>
 </html>

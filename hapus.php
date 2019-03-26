@@ -8,22 +8,13 @@ session_start();
 
 $id = $_GET["id"];
 
-if (hapus($id)>0) {
-			echo "data berhasil dihapus";
-			echo "<br>";
-			echo "klik ";
-			echo "<a href='admin.php'>disini</a>";
-			echo " untuk melihat hasil";
-		}
-	else
-	{
-			echo "data gagal dihapus";
-			echo "<br>";
-			echo "klik ";
-			echo "<a href='admin.php'>disini</a>";
-			echo " untuk melihat hasil";
-		}
-	
+if(hapus($id)>0){
+    echo "<script>alert('Data Berhasil dihapus');document.location.href='admin.php'</script>";
+       
+}else{
+    echo "<script>alert('Data Gagal DiHapus');document.location.href='admin.php'</script>";
+       
+}
 
 
  ?>
