@@ -79,7 +79,7 @@ if($_SESSION['level']!="admin"){
                     <a href="creat.php" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> Tambah</a><br></br>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <span class="title"><b>Data Siswa</b></span>
+                            <span class="title"><b>Data Pengiriman Paket</b></span>
                         </div>
                         <div class="panel-body">
                             <table class="table table-stripped" width="100%">
@@ -87,11 +87,11 @@ if($_SESSION['level']!="admin"){
                                     <tr>
    
      <th>No</th>
-    <th>Nama Mahasiswa 👩‍🎓</th>
-    <th>keterangan  💸</th>
-    <th>Catatan  📑</th>
+    <th>Nama Pengirim</th>
+    <th>Di Kirim Dari</th>
+    <th>Status Pengiriman  📑</th>
     <th>Terakhir di update ⏱</th>
-    <th>opsi</th>
+    <th>Opsi</th>
   </tr> 
 
 <?php $i=1; ?>

@@ -55,16 +55,16 @@
 	<div class="panel-body">
  	<form method="POST" action="">
  		<div class="form-group">
- 			<label class="title">Nama Mahasiswa</label>
+ 			<label class="title">Nama Pengirim</label>
  				<input type="hidden" name="id" value="<?= $ubah["id"]?>"> 
 					<input type="text" name="nama" class="form-control" value="<?= $ubah["nama"]?>">
 		</div>
 		<div class="form-group">
-			<label class="title">Keterangan</label>
+			<label class="title">Dikirim Dari</label>
 				<input type="text" name="ketbayar" class="form-control" value="<?= $ubah["ketbayar"]?>">
 		</div>
 		<div class="form-group">
-		<label class="title">Catatan</label>
+		<label class="title">Status Pengiriman</label>
 		<textarea name="catatan" class="form-control" value="<?= $ubah["catatan"]?>"></textarea>
 		<br><br>
 		<input type="submit" name="submit"">

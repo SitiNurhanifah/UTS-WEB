@@ -80,10 +80,10 @@ if($_SESSION['level']!="manager"){
   <br><br>
     <table border="1" cellpadding="10" cellspacing="0" width="50%" >
   <tr>
-     <th>no</th>
-    <th>Nama Mahasiswa 👩‍🎓👨‍🎓</th>
-    <th>keterangan  💸</th>
-    <th>Catatan  📑</th>
+     <th>No</th>
+    <th>Nama Pengirim </th>
+    <th>Di kirim Dari</th>
+    <th>Status Pengiriman</th>
     <th>terkhir di update ⏱</th>
     
   </tr> 

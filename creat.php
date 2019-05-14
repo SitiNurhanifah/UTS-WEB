@@ -29,15 +29,17 @@ session_start();
 <div class="panel-body">
  	<form method="POST" action="actioncreat.php">
  		<input type="hidden" name="waktu">
- 		<label class="title">Nama Mahasiswa	: </label>
-		<input type="text" name="nama" class="form-control" placeholder="Nama Mahasiswa">
+ 		<label class="title">Nama Pengirim	: </label>
+		<input type="text" name="nama" class="form-control" placeholder="Nama Pengirim">
 	</div>
+
+
 	<div class="panel-body">
-		<label class="title">Keterangan	:  </label>
-		<input type="text" name="ketbayar" class="form-control" placeholder="Lunas/Belum">
+		<label class="title">Dikirim Dari	:  </label>
+		<input type="text" name="ketbayar" class="form-control" placeholder="Dikirim Dari">
 		</div>
 		<div class="panel-body">
-			<label class="title">Catatan	: </label>
+			<label class="title">Status Pengiriman	: </label>
 		<textarea name="catatan" class="form-control" placeholder="Text Artikel"> </textarea>
 		</div>
 		<div class="modal-footer">

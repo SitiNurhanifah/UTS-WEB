@@ -23,7 +23,7 @@ require 'koneksi.php';
                     
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <span class="title"><b>Data Siswa</b></span>
+                            <span class="title"><b>Data Pengiriman Paket</b></span>
                         </div>
                         <div class="panel-body">
                             <table class="table table-stripped" width="100%">
@@ -31,9 +31,9 @@ require 'koneksi.php';
                                     <tr>
    
      <th>No</th>
-    <th>Nama Mahasiswa 👩‍🎓</th>
-    <th>keterangan  💸</th>
-    <th>Catatan  📑</th>
+    <th>Nama Pengirim</th>
+    <th>Di Kirim Dari</th>
+    <th>Status Pengiriman  📑</th>
     <th>Terakhir di update ⏱</th>
   </tr> 
 
